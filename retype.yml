@@ -1,0 +1,11 @@
+input: src
+output: docs
+url: # Add your website address here
+branding:
+  title: Documentation
+  label: 3dp
+links:
+- text: Home
+  link: https://retype.com/guides/getting-started/
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."
