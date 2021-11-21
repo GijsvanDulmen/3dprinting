@@ -4,6 +4,9 @@ url: # Add your website address here
 branding:
   title: Documentation
   label: 3dp
+  colors:
+    label:
+      text: #ffffff
 links:
 - text: Home
   link: https://retype.com/guides/getting-started/

@@ -6,26 +6,31 @@
     <meta name="turbo-cache-control" content="no-cache">
 
     <!-- Primary Meta Tags -->
-    <title>Top layers</title>
-    <meta name="title" content="Top layers">
+    <title>Top Layers</title>
+    <meta name="title" content="Top Layers">
+    <meta name="description" content="For better top layers setup the following things." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="/slicer-configuration/top-layers/">
-    <meta property="og:title" content="Top layers">
+    <meta property="og:title" content="Top Layers">
+    <meta property="og:description" content="For better top layers setup the following things.">
+    <meta property="og:image" content="/slicer-configuration/top-layers/top-surface-linewidth-02.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="/slicer-configuration/top-layers/">
-    <meta property="twitter:title" content="Top layers">
+    <meta property="twitter:title" content="Top Layers">
+    <meta property="twitter:description" content="For better top layers setup the following things.">
+    <meta property="twitter:image" content="/slicer-configuration/top-layers/top-surface-linewidth-02.jpg">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.690821643089" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.690823009134" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.690821643089" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.690823009134" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.690821643089" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.690823009134" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -176,9 +181,50 @@
 <doc-anchor-target id="top-layers" class="break-words">
     <h1>
         <doc-anchor-trigger class="header-anchor-trigger" to="#top-layers">#</doc-anchor-trigger>
-        <span>Top layers</span>
+        <span>Top Layers</span>
     </h1>
 </doc-anchor-target>
+<p>For better top layers setup the following things.</p>
+<doc-anchor-target id="top-surface-skin-line-width">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#top-surface-skin-line-width">#</doc-anchor-trigger>
+        <span>Top Surface Skin Line Width</span>
+    </h2>
+</doc-anchor-target>
+<p>Set this to 0.32mm when your normale line width is 0.4mm in order to get smoother
+top surfaces. Using these settings no ironing is needed anymore.</p>
+<p>Example with 0.2mm top surface line width:
+<figure class="content-center">
+    <img src="top-surface-linewidth-02.jpg" alt="Top 0.2" />
+    <figcaption class="caption">Top 0.2</figcaption>
+</figure>
+</p>
+<p>Example with 0.32mm top surface line width:
+<figure class="content-center">
+    <img src="top-surface-linewidth-032.jpg" alt="Top 0.32" />
+    <figcaption class="caption">Top 0.32</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="skin-overlap-percentage">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#skin-overlap-percentage">#</doc-anchor-trigger>
+        <span>Skin overlap percentage</span>
+    </h2>
+</doc-anchor-target>
+<p>Put this to somewhere around 40% to get the following
+result in which wall 5 is overlapped by the skin.</p>
+<p><figure class="content-center">
+    <img src="top-layer-overlap.png" alt="Top layer overlap" />
+    <figcaption class="caption">Top layer overlap</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="monotonic-top-surface">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#monotonic-top-surface">#</doc-anchor-trigger>
+        <span>Monotonic top surface</span>
+    </h2>
+</doc-anchor-target>
+<p>Set this to true to make the top even more smooth.</p>
 
 
 
@@ -200,10 +246,10 @@
     </div>
 
     <div class="w-1/2">
-        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/volumetric-flow/">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/slicer-configuration/walls/">
             <span>
                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                <span class="block mt-1">Volumetric Flow</span>
+                <span class="block mt-1">Walls</span>
             </span>
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
         </a>
@@ -251,6 +297,6 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Top layers", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+        <script>window.__DOCS__ = { "title": "Top Layers", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
     </body>
 </html>
